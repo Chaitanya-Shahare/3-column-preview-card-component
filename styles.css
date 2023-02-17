@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 50%;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  border-radius: 7px;
+  overflow: hidden;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+@media screen and (max-width: 420px) {
+  .card {
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: auto;
+    width: 90%;
+    margin: 20px 20px;
+  }
+}
+.card__column {
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+@media screen and (max-width: 420px) {
+  .card__column {
+    height: 300px;
+  }
+}
+.card__column img {
+  width: 40px;
+}
+.card__column__heading {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 23px;
+  margin: 15px 0;
+}
+.card__column--yellow {
+  background-color: hsl(31, 77%, 52%);
+}
+.card__column--cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.card__column--green {
+  background-color: hsl(179, 100%, 13%);
+}
+.card__column__para {
+  line-height: 1.7em;
+}
+.card__column__button {
+  background-color: white;
+  border: 1px solid hsla(0, 0%, 100%, 0.75);
+  border-radius: 50px;
+  padding: 7px 12px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.card__column__button:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 1px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.button--yellow {
+  color: hsl(31, 77%, 52%);
+}
+.button--cyan {
+  color: hsl(184, 100%, 22%);
+}
+.button--green {
+  color: hsl(179, 100%, 13%);
+}
+
+/*# sourceMappingURL=styles.css.map */
